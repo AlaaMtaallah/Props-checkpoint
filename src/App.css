@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+footer {
+  height: 80px;
+  background-color: rgb(23, 24, 24);
+}
+.clickBtn:hover {
+  background-color: #86720f;
+}

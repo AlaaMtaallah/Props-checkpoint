@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import Profile from './profile/Profile';
+import Image from './profile/Image';
 import './App.css';
 
 function App() {
+  const bioText = `A software developer specialized in Dotnet, I have nearly 2 years of experience, at this time i'm looking to improve my skills and find a better opportunities.
+  Best Regards :)`
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Profile fullName="Alaa Mtaallah" profession="Dotnet Developer" bio={bioText}>
+        <Image></Image> 
+      </Profile>
     </div>
   );
 }
